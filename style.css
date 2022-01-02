@@ -2,20 +2,43 @@
     scroll-behavior: smooth; 
   }
 .body {
-    min-height: 100vh;
-    margin: 0; 
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Avro', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
 
+* {
+    box-sizing: border-box;
 }
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
+@media (max-width: 1440px) {
+.container {
+    padding: 0 20px;}
+}
+
 .header {
-    border: 1px solid red;
+    background-color: #000000;
+}
+header {
+    display: block;
+}
+nav {
+    display: block;
+}
+.nav {
+    background-color: rgb(66, 65, 65);
 }
 .nav-list {
     display: flex;
@@ -24,9 +47,12 @@
     list-style: none;
   }
   .nav-link {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     padding: 0 20px;
     line-height: 50px;
-    color: rgb(36, 35, 35);
     transition: .3s
   }
   .nav-link:hover {
@@ -34,9 +60,73 @@
     color: black;
     cursor: help;
 }
+ul {
+    display: block;
+    list-style-type:circle;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+.switch {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    cursor: help;
+    user-select: none;
+    z-index: 15;
+}
+.switch div {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+    z-index: 15;
+}
 .main {
     border: 1px solid rgb(0, 0, 0);
 }
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}    
+.section {
+    width: 50%;
+}
+#profile {
+    text-align: center;
+}
+.img {
+    border-radius: 100em;
+    width: 700px;
+    ;
+}
+.line {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
 .footer {
     border: 1px solid red;
+}
+@media (max-width: 768px) {
+.section {
+width: 100%;
+}
 }
