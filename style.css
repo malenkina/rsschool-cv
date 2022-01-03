@@ -1,1 +1,196 @@
+.html {
+    scroll-behavior: smooth; 
+  }
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    background-color: #000000;
+    display: block;
+}
+.dropbtn {
+    background-color: grey;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: help;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(70, 77, 77);
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #ffffff;
+    padding:  12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {background-color: rgb(70, 77, 77);}
+.show {display: block;}
+.main {
+    margin-bottom: auto;
+    align-items: center;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 20px
+    }
+}
+.main-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}    
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 10px solid pink;
+}
+.section {
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+}
+section {
+    display: block;
+}
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+}
+.main-title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    line-height: 50px;
+    word-spacing: 3px;
+}
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -70px;
+    width: 140px;
+    height: 3px;
+    background-color: #000000;
+}
+.addition {
+    margin-top: 20px;
+    color: #585858;
+    line-height: 50px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.section-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 50%);
+    filter: drop-shadow(0);
+    transition: 5s;
+}
+.section-language {
+    padding: 10px;
+    padding-bottom: 35px;
+}
 
+.footer {
+    background-color: #585858;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.github {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 45px;
+}
+.link {
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #ffffff;
+}
+.rss {
+    width: 121px;
+    height: 45px;
+    background-image: url(https://rs.school/images/rs_school.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
