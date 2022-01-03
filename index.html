@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@500&family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>CV Malenkina Liubov</title>
+  </head>
+  <body class="body">
+      <header class="header">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                    <a href="#summary" class="nav-link">Summary</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#mycode" class="nav-link">My code</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#languages" class="nav-link">Languages</a>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+      </header>
+      <main class="main">
+        <div class="container">
+            <section class="section section-profile" id="profile">
+                <img class="img" src="me.jpg" alt="me">
+                <div class="profile-title">
+                    <h1 class="main-title">
+                        Malenkina Liubov
+                    </h1>
+                    <h3 class="addition">Junior Front-End Developer</h3>
+                </div>
+            </section>
+            <div class="main-container">
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul> 
+                    <li>Russia, Saint Petersburg</li>
+                    <li>Phone: +79681651649</li>
+                    <li>E-mail: malenkina96@gmail.com</li>
+                    <li>GitHub: malenkina</li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>I am a beginner developer who is always tries to learn something new. I love to code, it really gives me pleasure. Even if there are problems that are not easy to solve, I will deal with it and doesn't matter how much time I will spend.
+                    Speaking about my personal qualities, I would like to note, I am a purposeful and very stress-resistant person, who is not used to giving up.  Although my experience does not quite fit the IT sphere, it still gives me some advantage:</p>
+                    <ul>
+                        <li>I learned Chinese - it made me understood nothing is impossible in the world.</li>
+                        <li>For a long time I lived in a foreign country, with a completely different mentality - it developed my communication skills.</li>
+                        <li>I worked in logistics - it prepared me to meet any deadlines.</li>
+                    </ul>
+                    <p>I can continue this list for a very long time, but in my opinion it is enough to note, that I am ready to always learning and growing in order to be an excellent front-end developer</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li> Bachelor degree, Far Eastern Federal University, Russia, Vladivostok.
+                        <ul>
+                            <li>Sinology</li>
+                        </ul>
+                    </li>
+                    <li>Master degree, Ningbo Universiry 宁波大学, China, Ningbo.
+                        <ul>
+                            <li>Teaching Chinese as second language</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section class="section" id="mycode">
+                <h2 class="section-title">My code</h2>
+                <pre>
+                    <code>
+                        function multiply(a, b){
+                            console.log(a * b);
+                            return a * b;
+                          }
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <ul>
+                    <li>Translator (ch-ru, ru-ch)</li>
+                    <li>Purchasing Manager</li>
+                    <li>Chinese teacher</li>
+                </ul>
+            </section>
+            <section class="section-language" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul>
+                    <li>English, B2.</li>
+                    <li>Chinese, C2</li>
+                </ul>
+            </section>
+        </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                2022
+                <a href="https://github.com/malenkina" class="github link">Malenkina</a>
+            </div>
+            <a href="https://rs.school/index.html" class="rss"></a>
+        </div>
+      </footer>
+  </body>
+</html>
