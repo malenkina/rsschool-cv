@@ -198,4 +198,5 @@ h1 {
     background-image: url(https://rs.school/images/rs_school.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    font-size: 0;
 }
