@@ -1,5 +1,5 @@
 .html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
   }
 .body {
     display: flex;
@@ -78,7 +78,7 @@
 .main-container {
     flex-wrap: wrap;
     justify-content: space-between;
-}    
+}
 .section-profile {
     display: flex;
     justify-content: space-around;
